@@ -4,8 +4,9 @@ Simple calculator for performing simple operations on matrices and calculating e
 
 ### Operations:
 
-* Matrix adition and substraction
+* Matrix addition and substraction
 * Matrix multiply by escalar
+* Matrix transpose
 * Product of matrices
 * Determinant
 * Eigenvalues
