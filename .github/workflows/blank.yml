@@ -35,8 +35,8 @@ jobs:
         uses: NuGet/setup-nuget@v1.0.5
       
       - name: Nuget restore
-        run: nuget restore "Eigenvalores y Eigenvectores.sln"
+        run: nuget restore "Eigenvaloeres y Eigenvectores.sln"
       
       - name: Build the solution
-        run: msbuild "Eigenvalores y Eigenvectores.sln"
+        run: msbuild "Eigenvaloeres y Eigenvectores.sln"
         
