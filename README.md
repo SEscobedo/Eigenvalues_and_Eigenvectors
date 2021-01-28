@@ -14,5 +14,5 @@ Simple calculator for performing simple operations on matrices and calculating e
 * Eigenvectors and eigenvalues (Jacobi method)
 
 
-
+_Note: this project is a github test._
 
