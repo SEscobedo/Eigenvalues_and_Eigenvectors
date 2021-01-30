@@ -22,6 +22,7 @@ Partial Class Form1
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+		Me.components = New System.ComponentModel.Container()
 		Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
 		Me.TextBox1 = New System.Windows.Forms.TextBox()
 		Me.TextBox3 = New System.Windows.Forms.TextBox()
@@ -60,6 +61,7 @@ Partial Class Form1
 		Me.TextBox20 = New System.Windows.Forms.TextBox()
 		Me.Button14 = New System.Windows.Forms.Button()
 		Me.TextBox21 = New System.Windows.Forms.TextBox()
+		Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
 		Me.SuspendLayout()
 		'
 		'TextBox1
@@ -85,6 +87,7 @@ Partial Class Form1
 		Me.Button1.Size = New System.Drawing.Size(92, 23)
 		Me.Button1.TabIndex = 6
 		Me.Button1.Text = "Autovalores"
+		Me.ToolTip1.SetToolTip(Me.Button1, "Eigenvalues")
 		Me.Button1.UseVisualStyleBackColor = True
 		'
 		'TextBox2
@@ -150,6 +153,7 @@ Partial Class Form1
 		Me.Button2.Size = New System.Drawing.Size(75, 23)
 		Me.Button2.TabIndex = 15
 		Me.Button2.Text = "+"
+		Me.ToolTip1.SetToolTip(Me.Button2, "Matricial sum")
 		Me.Button2.UseVisualStyleBackColor = True
 		'
 		'Button3
@@ -159,6 +163,7 @@ Partial Class Form1
 		Me.Button3.Size = New System.Drawing.Size(75, 23)
 		Me.Button3.TabIndex = 16
 		Me.Button3.Text = "-"
+		Me.ToolTip1.SetToolTip(Me.Button3, "Matricial subtraction")
 		Me.Button3.UseVisualStyleBackColor = True
 		'
 		'Button4
@@ -168,6 +173,7 @@ Partial Class Form1
 		Me.Button4.Size = New System.Drawing.Size(75, 23)
 		Me.Button4.TabIndex = 17
 		Me.Button4.Text = "X"
+		Me.ToolTip1.SetToolTip(Me.Button4, "Matricial product")
 		Me.Button4.UseVisualStyleBackColor = True
 		'
 		'Button5
@@ -195,6 +201,7 @@ Partial Class Form1
 		Me.Button7.Size = New System.Drawing.Size(35, 23)
 		Me.Button7.TabIndex = 20
 		Me.Button7.Text = "I"
+		Me.ToolTip1.SetToolTip(Me.Button7, "Identity matrix")
 		Me.Button7.UseVisualStyleBackColor = True
 		'
 		'Button8
@@ -204,6 +211,7 @@ Partial Class Form1
 		Me.Button8.Size = New System.Drawing.Size(35, 23)
 		Me.Button8.TabIndex = 21
 		Me.Button8.Text = "0"
+		Me.ToolTip1.SetToolTip(Me.Button8, "Zero matrix")
 		Me.Button8.UseVisualStyleBackColor = True
 		'
 		'Button9
@@ -213,6 +221,7 @@ Partial Class Form1
 		Me.Button9.Size = New System.Drawing.Size(35, 23)
 		Me.Button9.TabIndex = 22
 		Me.Button9.Text = "T"
+		Me.ToolTip1.SetToolTip(Me.Button9, "Traspose")
 		Me.Button9.UseVisualStyleBackColor = True
 		'
 		'TextBox11
@@ -231,6 +240,7 @@ Partial Class Form1
 		Me.Button10.Size = New System.Drawing.Size(92, 23)
 		Me.Button10.TabIndex = 24
 		Me.Button10.Text = "Det"
+		Me.ToolTip1.SetToolTip(Me.Button10, "Determinant")
 		Me.Button10.UseVisualStyleBackColor = True
 		'
 		'Button11
@@ -240,6 +250,7 @@ Partial Class Form1
 		Me.Button11.Size = New System.Drawing.Size(35, 23)
 		Me.Button11.TabIndex = 25
 		Me.Button11.Text = "M"
+		Me.ToolTip1.SetToolTip(Me.Button11, "Memory")
 		Me.Button11.UseVisualStyleBackColor = True
 		'
 		'Label1
@@ -330,7 +341,9 @@ Partial Class Form1
 		Me.Button12.Name = "Button12"
 		Me.Button12.Size = New System.Drawing.Size(53, 23)
 		Me.Button12.TabIndex = 36
+		Me.Button12.Tag = ""
 		Me.Button12.Text = "x"
+		Me.ToolTip1.SetToolTip(Me.Button12, "Multiply by scalar")
 		Me.Button12.UseVisualStyleBackColor = True
 		'
 		'Button13
@@ -458,5 +471,5 @@ Partial Class Form1
     Friend WithEvents TextBox20 As System.Windows.Forms.TextBox
     Friend WithEvents Button14 As System.Windows.Forms.Button
     Friend WithEvents TextBox21 As System.Windows.Forms.TextBox
-
+	Friend WithEvents ToolTip1 As ToolTip
 End Class
