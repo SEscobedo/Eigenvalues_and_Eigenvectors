@@ -1,4 +1,4 @@
-﻿Module Module1
+﻿Public Module Module1
 
 
 
@@ -50,7 +50,7 @@
     End Function
 
 
-    
+
 
     'determina el tipo de matriz.
     Function Tipo(ByVal A(,) As Double) As String
@@ -122,9 +122,9 @@
             eig2 = 3 * q - eig1 - eig3   '  % since trace(A) = eig1 + eig2 + eig3
         End If
         Dim res(2) As String
-        res(0) = Str(Math.Round(eig1, 4))
-        res(1) = Str(Math.Round(eig2, 4))
-        res(2) = Str(Math.Round(eig3, 4))
+        res(0) = Str(Math.Round(eig1, 4)).Trim
+        res(1) = Str(Math.Round(eig2, 4)).Trim
+        res(2) = Str(Math.Round(eig3, 4)).Trim
 
 
         Eigenvalue3x3 = res
@@ -187,7 +187,7 @@ A(0, 0) * A(1, 2) * A(2, 1) * A(3, 3) - A(0, 1) * A(1, 0) * A(2, 2) * A(3, 3) + 
         'End If
 
     End Function
-    
+
     'Function EigenvalueIN(ByVal A(,) As Double) As String() 'método de las potencias inversas con translación
     '    'primera(aproximación)
     '    Dim ei() As Double
